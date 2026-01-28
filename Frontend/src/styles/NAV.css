@@ -1,0 +1,82 @@
+/* TOP NAV */
+.Main {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: end;
+  color: #ffffff;
+  position: fixed;
+  top:  0;
+  right: 0;
+  z-index: 1000;
+}
+
+.Logo{
+  display: flex;
+  font-size: 0.95rem;
+  flex-direction: row;
+  padding: 5px 10px;
+  border-radius: 20px;
+ color: black;
+  font-weight: 600; 
+}
+.Logo svg {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+.Entiies {
+  display: flex;
+  font-size: 0.95rem;
+  font-weight: 500;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #858181;
+  font-weight: 600;
+  position: absolute;
+  right: 5px; 
+  
+}
+
+/* BOTTOM NAV */
+.Bottom-nav-Container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+}
+
+.Bottom-nav-Container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.Bottom-Entiies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 500;
+
+  color: #ffffff;
+  gap: 4px;
+
+ 
+}
+
+.Bottom-Entiies svg {
+  font-size: 1.4rem;
+}
+
+
+

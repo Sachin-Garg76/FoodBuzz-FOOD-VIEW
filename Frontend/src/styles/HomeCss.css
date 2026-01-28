@@ -1,0 +1,119 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.reels-page {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.reels-feed {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.reels-feed::-webkit-scrollbar {
+  display: none;
+}
+
+.reel {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  background-color: #000;
+}
+
+/* VIDEO */
+.reel-video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+/* LIKE & SAVE BUTTONS */
+
+.Like-btn {
+  position: absolute;
+  right: 16px;
+  top: 40%;
+  z-index: 1000;
+}
+.Save-btn {
+  position: absolute;
+  right: 16px;
+  top: 47%;
+  z-index: 1000;
+}
+
+.Like-btn button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.Save-btn button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.like,
+.Save {
+  font-size: 32px;
+  color: #fff;
+}
+
+.like-Count {
+  display: block;
+  color: #fff;
+  text-align: center;
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+/* OVERLAY */
+.reel-overlay {
+  position: absolute;
+  height: 100%;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  pointer-events: none;
+}
+
+.reel-content {
+  position: relative;
+  padding: 14px;
+  padding-bottom: 15%; 
+  color: #fff;
+  pointer-events: auto;
+}
+
+
+.reel-description {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  max-width: 85%;
+  overflow: hidden;
+}
+
+.reel-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+}

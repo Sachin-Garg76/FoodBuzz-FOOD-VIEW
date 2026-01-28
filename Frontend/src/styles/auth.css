@@ -1,0 +1,166 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+/* Login Register Forms Styling  */
+body {
+  margin: 0;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f7f8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Partner-Login-Container {
+  margin: 20vh auto;
+  width: 400px;
+}
+.Partner-register-Container {
+  margin: 10vh auto;
+  width: 420px;
+}
+.User-Register-Container {
+  margin: 15vh auto;
+  width: 400px;
+}
+.User-Login-Container {
+  margin: 25vh 2%;
+  width: 400px;
+}
+.Create-Food-Container {
+  margin: 25vh 2%;
+  width: 400px;
+}
+.Container{
+  width: 95%;
+  background-color: #ffffff;
+  padding: 28px 26px;
+  border-radius: 8px;
+  border: 1px solid #dadce0;
+}
+
+/* Heading */
+.heading {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #202124;
+}
+
+.Span-Text {
+  color: #1a73e8;
+}
+
+.Container-Items {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.Form-navigation{
+  display: block;
+}
+.Form-navigation span{
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+
+.label-tag {
+  font-size: 13px;
+  color: #5f6368;
+  margin-bottom: 4px;
+}
+
+.input-tag {
+  height: 38px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  outline: none;
+}
+.contact-name-input{
+  width: 135px;
+}
+
+.input-tag:focus {
+  border-color: #1a73e8;
+}
+.Submit-Button{
+  height: 2.05rem;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-weight: bolder;
+  background-color: #1a73e8;
+}
+.Form-Nacvigation {
+  font-size: 13px;
+  color: #1a73e8;
+  text-decoration: none;
+  margin-top: 6px;
+}
+
+.Form-Nacvigation:hover {
+  text-decoration: underline;
+}
+/* Email + Phone in one line */
+.row-two {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 16px;
+}
+
+.row-two .field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #ff6a00;
+  box-shadow: 0 0 0 2px rgba(255, 106, 0, 0.15);
+}
+
+.form-input::file-selector-button {
+  padding: 8px 14px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: grey;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+
