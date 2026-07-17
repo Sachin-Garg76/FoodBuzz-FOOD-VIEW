@@ -1,18 +1,20 @@
 import React from 'react';
 import {BrowserRouter as Router, Route,Routes} from 'react-router-dom';
 
-// auth forms 
+// authentication forms 
 import UserRegister from '../Authforms/UserRegister.jsx';
 import UserLogin from '../Authforms/UserLogin.jsx';
 import PartnerRegister from '../Authforms/PartnerRegister.jsx';
 import PartnerLogin from '../Authforms/PartnerLogin.jsx';
 
-// general 
+// Save/Like
 import SaveReel from '../pages/General/Saved.reels.jsx';
 import LikedReels from '../pages/General/Liked.reels.jsx';
+
+// Lading Page
 import HomePage from '../pages/General/HomePage.jsx';
 
-// patner 
+// Food patner 
 import CreateFood from '../pages/food-partner/CreateFood.jsx';
 import FoodPartnerDashorad from '../pages/food-partner/FoodPartnerDashorad.jsx';
 import FoodPartnerHome from '../pages/food-partner/FoodPartnerHome.jsx';
