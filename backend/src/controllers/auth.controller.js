@@ -8,7 +8,7 @@ async function registerUser(req, res) {
   const isUserExist = await userModel.findOne({ email });
   if (isUserExist) {
     return res.status(400).json({
-      message: "User Already exist",
+      message: "User already exist",
     });
   }
   const hashedpassword = await bcrypt.hash(password, 10);
@@ -61,7 +61,7 @@ async function loginuser(req, res) {
   );
   res.cookie("token", token);
   res.status(200).json({
-    message: "Login Successfully",
+    message: "Login successfully",
     user: {
       _id: user._id,
       email: user.email,
@@ -80,7 +80,7 @@ async function registerfoodpartner(req, res) {
 
   if (isAccountAlreadyExist) {
     return res.status(400).json({
-      message: "food partner account already exists",
+      message: "food partner account already exist",
     });
   }
 
@@ -141,9 +141,6 @@ async function loginfoodpartner(req, res) {
   );
 
   res.cookie("token", token);
-
- 
-
   res.status(200).json({
     message: "Foodpartner login successfully",
     foodpartner: {
