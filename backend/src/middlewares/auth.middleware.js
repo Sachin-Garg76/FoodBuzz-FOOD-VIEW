@@ -7,7 +7,7 @@ async function authfoodpartnermiddleware(req,res,next){
 
     if(!token){
         return res.status(401).json({
-            message:"Unauthorized access"
+            message:"something wrong "
         })
     }
 
@@ -20,7 +20,7 @@ async function authfoodpartnermiddleware(req,res,next){
         next();
     }catch(err){
         return res.status(401).json({
-            message:"Invalid token"
+            message:"Token is invalid"
         })
     }
 }
@@ -31,7 +31,7 @@ async function authUserMiddleware(req,res,next){
 
     if(!token){
         return res.status(401).json({
-            message:"Unauthorized access"
+            message:"you are not authenticate to access"
         })
     }
 
